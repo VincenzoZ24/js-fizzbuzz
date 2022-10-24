@@ -26,3 +26,27 @@ body{
     justify-content: center;
     align-items: center;
 }
+.sq_3{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(53, 78, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sq_5{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(109, 184, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sq_3_5{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(26, 201, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

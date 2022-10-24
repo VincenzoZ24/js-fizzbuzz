@@ -6,15 +6,15 @@ let i;
 for (let i = 1; i <= 100; i++) {
 
     if (i % 3 == 0) {
-        eleSquares.innerHTML += `<div class="sq">${"fizz"}</div>`
-    }
-    else if (i % 5 == 0) {
-        eleSquares.innerHTML += `<div class="sq">${"Buzz"}</div>`
-    }
-   
-    else if (!((i % 3 == 0) || (i % 5 == 0))) {
+        eleSquares.innerHTML += `<div class="sq_3">${"fizz"}</div>`
+    } else if (i % 5 == 0) {
+        eleSquares.innerHTML += `<div class="sq_5">${"Buzz"}</div>`
+    } 
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        eleSquares.innerHTML += `<div class="sq_3_5">${"FizzBuzz"}</div>`
+    } else if (!((i % 3 == 0) || (i % 5 == 0))) {
         eleSquares.innerHTML += `<div class="sq">${i}</div>`
-    };
-
+    }
+    
 
 };
