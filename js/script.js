@@ -3,20 +3,18 @@
 let eleSquares = document.querySelector(".squares");
 let i;
 
-for ( let i = 1; i <= 100; i++){
-    
-    if ( i % 3 == 0 ) {
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 3 == 0) {
         eleSquares.innerHTML += `<div class="sq">${"fizz"}</div>`
     }
-     if (i % 5 == 0) {
+    else if (i % 5 == 0) {
         eleSquares.innerHTML += `<div class="sq">${"Buzz"}</div>`
     }
-    // if ((i % 3 == 0) && (i % 5 == 0)) {
-    //     eleSquares.innerHTML += `<div class="sq">${"FizzBuzz"}</div>`
-    // }
-    else{
-        eleSquares.innerHTML +=  `<div class="sq">${i}</div>`
-    }
-        
-    
-}
+   
+    else if (!((i % 3 == 0) || (i % 5 == 0))) {
+        eleSquares.innerHTML += `<div class="sq">${i}</div>`
+    };
+
+
+};
